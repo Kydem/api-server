@@ -4,10 +4,8 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const sql = postgres(process.env.DATABASE_ID);
-
+const sql = postgres(process.env.DATABASE_URL);
 const app = express();
-
 
 app.use(express.json());
 app.use(express.static("./client"));
