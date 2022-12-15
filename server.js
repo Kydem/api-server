@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const sql = postgres({ database: "calorie_tracker" });
+const sql = postgres(process.env.DATABASE_ID);
 
 const app = express();
 
