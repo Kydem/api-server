@@ -38,4 +38,4 @@ app.post("/api/meals", (req, res) => {
     })
 })
 
-app.listen(3000);
+app.listen(proces.env.PORT);
